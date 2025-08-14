@@ -94,7 +94,19 @@ blockquote{margin:0 0 .5rem;}
 .about .tick li{padding-left:1.5rem;position:relative}
 .about .tick li::before{content:"✓";position:absolute;left:0;color:#1dbf73;font-weight:700}
 .cta-bar{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.5rem}
+.quote-btn {
+  background: linear-gradient(45deg, #007BFF, #8B0000);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
 
+.quote-btn:hover {
+  background: linear-gradient(45deg, #0056b3, #5b0000);
+}
 /* Small screens */
 @media (max-width:640px){
   .nav a{padding:.3rem .55rem}
