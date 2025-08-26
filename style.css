@@ -76,7 +76,7 @@ img {
 
 /* ========== Hero Section ========== */
 .hero {
-  background: linear-gradient(135deg, #001f4d, #8B0000);
+  background: #8B0000;
   color: white;
   text-align: center;
   padding: 80px 20px;
