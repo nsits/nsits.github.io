@@ -1,184 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get a Quote - NetSecure IT & Security</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get a Quote • NetSecure IT & Security</title>
+  <meta name="description" content="Request a service quote from NetSecure IT & Security — reliable IT, CCTV, and networking services in Kolkata." />
+
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
-
-    /* ====== Main Navbar/Header ====== */
-    .navbar {
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .navbar h2 {
-      margin: 0;
-      font-size: 1.4rem;
-      letter-spacing: 1px;
-    }
-    .navbar a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    .navbar a:hover {
-      color: #007BFF;
-    }
-
-    /* ====== Quote Page Header ====== */
-    header {
-      background: linear-gradient(45deg, #007BFF, #8B0000);
-      padding: 20px 15px;
-      color: white;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    header p {
-      margin-top: 5px;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-
-    /* ====== Form Styling ====== */
-    form {
-      background: white;
-      max-width: 600px;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    }
-    label {
-      font-weight: bold;
-      display: block;
-      margin: 12px 0 6px;
-    }
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 15px;
-      transition: border 0.3s;
-    }
-    input:focus, select:focus, textarea:focus {
-      border-color: #007BFF;
-      outline: none;
-      box-shadow: 0 0 5px rgba(0,123,255,0.3);
-    }
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-    button {
-      background: linear-gradient(45deg, #007BFF, #8B0000);
-      color: white;
-      border: none;
-      padding: 14px 20px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      width: 100%;
-      transition: background 0.3s, transform 0.2s;
-    }
-    button:hover {
-      background: linear-gradient(45deg, #0056b3, #5b0000);
-      transform: translateY(-2px);
-    }
-
-    /* Responsive Fixes */
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .navbar a {
-        margin: 8px 0 0 0;
-      }
-      header h1 {
-        font-size: 1.6rem;
-      }
-      form {
-        margin: 20px;
-        padding: 20px;
-      }
-    }
-  </style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Main Site Navbar -->
-  <div class="navbar">
-    <h2>NetSecure IT & Security</h2>
-    <div>
-      <a href="https://nsits.github.io/#home">Home</a>
-      <a href="https://nsits.github.io/#about">About</a>
-      <a href="https://nsits.github.io/#services">Services</a>
-      <a href="https://nsits.github.io/#contact">Contact</a>
-    </div>
-  </div>
-
-  <!-- Quote Page Header -->
-  <header>
-    <h1>Get a Quote</h1>
-    <p>Your Trusted IT & Security Partner</p>
+  <!-- Site Header -->
+  <header class="site-header">
+    <a class="brand" href="index.html#home">
+      <img src="assets/logo.svg" width="34" height="34" alt="NetSecure logo" loading="eager" decoding="async" />
+      <span>NetSecure IT & Security</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#about">About Us</a>
+      <a class="quote-btn" href="quote.html">
+        <i class="fa-solid fa-file-signature"></i> Request Quote
+      </a>
+      <a class="cta" href="index.html#contact">Contact</a>
+    </nav>
   </header>
 
+  <!-- Quote Page Header -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1><i class="fa-solid fa-file-signature"></i> Get a Quote</h1>
+      <p>Your Trusted IT & Security Partner</p>
+    </div>
+  </section>
+
   <!-- Quote Form -->
-  <form action="https://formspree.io/f/mwpnkodb" method="POST">
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <main class="section narrow">
+    <form action="https://formspree.io/f/mwpnkodb" method="POST" class="quote-form">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
 
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required>
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required />
 
-    <label for="service">Select IT Service:</label>
-    <select id="service" name="service" required>
-      <option value="">-- Select Service --</option>
-      <option value="CCTV Installation">CCTV Installation</option>
-      <option value="Network Setup">Network Setup</option>
-      <option value="Computer Repair">Computer Repair</option>
-      <option value="Data Recovery">Data Recovery</option>
-      <option value="Website Development">Website Development</option>
-      <option value="Software Installation">Software Installation</option>
-      <option value="Other">Other</option>
-    </select>
+      <label for="service">Select IT Service:</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select Service --</option>
+        <option value="CCTV Installation">CCTV Installation</option>
+        <option value="Network Setup">Network Setup</option>
+        <option value="Computer Repair">Computer Repair</option>
+        <option value="Data Recovery">Data Recovery</option>
+        <option value="Website Development">Website Development</option>
+        <option value="Software Installation">Software Installation</option>
+        <option value="Other">Other</option>
+      </select>
 
-    <label for="description">Describe Your Work:</label>
-    <textarea id="description" name="description" placeholder="Please describe your requirement in detail..." required></textarea>
+      <label for="description">Describe Your Work:</label>
+      <textarea id="description" name="description" placeholder="Please describe your requirement in detail..." required></textarea>
 
-    <button type="submit">Submit Request</button>
-  </form>
+      <button type="submit" class="btn primary">
+        <i class="fa-solid fa-paper-plane"></i> Submit Request
+      </button>
+    </form>
+  </main>
 
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© <span id="year"></span> NetSecure IT &amp; Security. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
