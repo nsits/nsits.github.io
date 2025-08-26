@@ -22,7 +22,7 @@ img {
 
 /* ========== Header & Navbar ========== */
 .site-header {
-  background: linear-gradient(45deg, #8B0000, #001f4d);
+  background: #001f4d;
   color: white;
   display: flex;
   justify-content: space-between;
