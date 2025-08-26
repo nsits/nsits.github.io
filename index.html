@@ -1,58 +1,76 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>NetSecure IT & Security</title>
-<meta name="description" content="NetSecure IT & Security — CCTV, networking, & IT support in Kolkata. Professional, secure, responsive." />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<!-- Loading overlay -->
-<div id="site-loader" class="site-loader"><div class="loader-dot"></div></div>
+<!DOCTYPE html>
+<div class="container">
+<h2>Who We Are</h2>
+<p>At NetSecure IT & Security, we specialize in robust cybersecurity, IT infrastructure, and advanced networking solutions. Our mission is to make your business safe in the digital world.</p>
+<a href="about.html" class="btn-secondary">Learn More</a>
+</div>
+</section>
 
 
-<header class="site-header">
-<div class="container header-inner">
-<a class="brand" href="index.html#home">
-<img src="assets/logo.svg" alt="NetSecure logo" width="42" height="42">
-<span class="brand-text">NetSecure IT &amp; Security</span>
-</a>
-<nav class="nav">
-<a href="#services">Services</a>
-<a href="#reviews">Reviews</a>
-<a href="about.html">About</a>
-<a href="quote.html" class="btn-outline">Get Quote</a>
-<a href="#contact" class="btn">Contact</a>
-</nav>
+<!-- Reviews -->
+<section id="reviews" class="reviews-section">
+<div class="container">
+<h2>What Our Clients Say</h2>
+<div class="reviews-grid">
+<div class="review-card fade-up">
+<p>“NetSecure transformed our IT infrastructure with professional security solutions.”</p>
+<span>- GlobalTech Pvt Ltd</span>
 </div>
-</header>
+<div class="review-card fade-up">
+<p>“Their firewall and network monitoring setup has been flawless. Highly recommended.”</p>
+<span>- SecureNet Systems</span>
+</div>
+<div class="review-card fade-up">
+<p>“Great team with expertise in cybersecurity. Quick response and reliable services.”</p>
+<span>- FinTrust Bank</span>
+</div>
+<div class="review-card fade-up">
+<p>“Professional, trustworthy, and innovative in handling IT risks.”</p>
+<span>- Nexa Enterprises</span>
+</div>
+<div class="review-card fade-up">
+<p>“They helped us secure sensitive data with encryption and threat detection.”</p>
+<span>- MedSecure Health</span>
+</div>
+</div>
+</div>
+</section>
 
 
-<main>
-<section id="home" class="hero">
-<div class="container hero-inner">
-<div class="hero-copy">
-<h1>Reliable IT & Security for Homes & Businesses</h1>
-<p class="lead">CCTV, Networking, Router setup, Computer repair — quick, professional, and secure.</p>
-<div class="hero-cta">
-<a href="quote.html" class="btn">Request a Quote</a>
-<a href="#contact" class="btn btn-ghost">Request Callback</a>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+<div class="container">
+<h2>Contact Us</h2>
+<p>Reach out to our team for consultations and cybersecurity services.</p>
+<a href="quote.html" class="btn-primary">Get in Touch</a>
 </div>
-<ul class="hero-pill">
-<li>📞 +91 89815 94925</li>
-<li>✉ <a href="mailto:netsecureit@hotmail.com">netsecureit@hotmail.com</a></li>
-<li>📍 Kolkata, West Bengal</li>
-</ul>
-</div>
-<div class="hero-visual" aria-hidden="true">
-<!-- decorative card -->
-<div class="card-visual">
-<h4>Secure • Reliable • Local</h4>
-<p>On-site support | Remote assistance | 6 months warranty on installations</p>
-</div>
-</div>
-</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+<p>&copy; 2025 NetSecure IT & Security. All rights reserved.</p>
+</footer>
+
+
+<script>
+// Simple scroll animation
+const faders = document.querySelectorAll('.fade-up, .fade-in, .fade-in-delay');
+const appearOptions = { threshold: 0.2 };
+
+
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+entries.forEach(entry => {
+if (!entry.isIntersecting) return;
+entry.target.classList.add('appear');
+observer.unobserve(entry.target);
+});
+}, appearOptions);
+
+
+faders.forEach(fader => {
+appearOnScroll.observe(fader);
+});
+</script>
+</body>
 </html>
