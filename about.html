@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us • NetSecure IT & Security</title>
   <meta name="description" content="About NetSecure IT & Security — reliable IT, CCTV, and networking services in Kolkata." />
-  <link rel="preload" href="style.css" as="style" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Site Header -->
   <header class="site-header">
     <a class="brand" href="index.html#home">
       <img src="assets/logo.svg" width="34" height="34" alt="NetSecure logo" loading="eager" decoding="async" />
@@ -17,41 +21,51 @@
     <nav class="nav">
       <a href="index.html#services">Services</a>
       <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#about">About Us</a>
+      <a class="quote-btn" href="quote.html">
+        <i class="fa-solid fa-file-signature"></i> Request Quote
+      </a>
       <a class="cta" href="index.html#contact">Contact</a>
     </nav>
   </header>
 
+  <!-- About Us Content -->
   <main class="section narrow">
     <h1>About Us</h1>
     <p class="muted">We keep your technology running smoothly and securely.</p>
 
     <article class="about">
-      <p><strong>NetSecure IT &amp; Security</strong> is an independent IT services business based in Kolkata, providing practical, on‑site and remote support for homes and small-to-medium businesses.</p>
+      <p><strong>NetSecure IT &amp; Security</strong> is an independent IT services business based in Kolkata, providing practical, on-site and remote support for homes and small-to-medium businesses.</p>
       <p><strong>NetSecure IT & Security</strong> is led by <strong>Sanju Thakur</strong>, an IT Professional and Technical Engineer from Kolkata, bringing hands-on expertise and a client-focused approach.</p>
       <ul class="bullet">
         <li>Fast response and clear communication</li>
-        <li>Transparent pricing and reliable after‑service support</li>
-        <li>Security‑focused configurations and best practices</li>
+        <li>Transparent pricing and reliable after-service support</li>
+        <li>Security-focused configurations and best practices</li>
       </ul>
 
       <h2>Why Choose Us</h2>
       <ul class="tick">
-        <li>End‑to‑end CCTV solutions — survey, installation, and maintenance</li>
+        <li>End-to-end CCTV solutions — survey, installation, and maintenance</li>
         <li>Stable, secure network setups with structured cabling</li>
         <li>Speedy computer diagnostics and upgrades</li>
-        <li>Flexible scheduling — on‑site or remote</li>
+        <li>Flexible scheduling — on-site or remote</li>
       </ul>
 
       <div class="cta-bar">
-        <a class="btn" href="mailto:netsecureit@hotmail.com?subject=Service%20Inquiry%20-%20NetSecure">Contact Us</a>
+        <a class="btn primary" href="mailto:netsecureit@hotmail.com?subject=Service%20Inquiry%20-%20NetSecure">Contact Us</a>
         <a class="btn secondary" href="index.html#services">View Services</a>
       </div>
     </article>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
     <p>© <span id="year"></span> NetSecure IT &amp; Security. All rights reserved.</p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
