@@ -12,6 +12,31 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="navbar">
+  <div class="navbar-logo">
+    <img src="logo.png" alt="NetSecure Logo">
+    <span>NetSecure IT & Security</span>
+  </div>
+
+  <!-- Hamburger for mobile -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About Us</a>
+    <a href="quote.html">Request Quote</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </nav>
+</header>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navLinks').classList.toggle('active');
+}
+</script>
+  
   <!-- Site Header -->
   <header class="site-header">
     <a class="brand" href="#home">
