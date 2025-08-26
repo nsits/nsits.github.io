@@ -1,114 +1,65 @@
-/* NetSecure IT & Security – fast, modern, responsive */
-:root{
-  --bg:#0a1020;
-  --ink:#0f1530;
-  --muted:#5b6b88;
-  --card:#ffffff;
-  --grad1:#1b9fff;
-  --grad2:#00d4ff;
-  --accent:#1a73e8;
-  --ring: rgba(26,115,232,.25);
+* ===============================
 }
 
-*{box-sizing:border-box}
-img{max-width:100%;height:auto;display:block}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-h1,h2,h3{line-height:1.15;margin:0 0 .5rem}
-p{margin:.5rem 0 1rem}
-ul{margin:.5rem 0 1rem;padding-left:1.25rem}
 
-.site-header{
-  position:sticky;top:0;z-index:10;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:1rem;padding:.75rem 1rem;background:#fff;border-bottom:1px solid #eef1f6
-}
-.brand{display:flex;align-items:center;gap:.5rem;color:var(--ink);font-weight:700}
-.nav{display:flex;gap:.75rem;align-items:center}
-.nav a{padding:.4rem .7rem;border-radius:.6rem}
-.nav .cta{background:var(--ink);color:#fff}
-.nav .cta:hover{filter:brightness(1.05)}
-
-.hero{
-  position:relative;overflow:hidden;color:#fff;text-align:center
-}
-.hero-inner{padding:6rem 1rem 5rem;max-width:980px;margin:0 auto}
-.hero h1{font-size:clamp(28px, 5vw, 44px);margin-bottom:.5rem}
-.hero .sub{opacity:.95;font-size:clamp(14px, 2.2vw, 18px)}
-.pill{display:inline-flex;gap:1rem;flex-wrap:wrap;justify-content:center;
-  margin-top:1rem;background:rgba(255,255,255,.08);backdrop-filter:saturate(1.2) blur(6px);
-  padding:.6rem 1rem;border:1px solid rgba(255,255,255,.18);border-radius:999px
-}
-.hero-bg{
-  position:absolute;inset:-20% -10% auto -10%;height:120%;
-  background: radial-gradient(80% 60% at 50% -10%, rgba(0,212,255,.6), transparent 60%),
-              radial-gradient(60% 60% at 10% 20%, rgba(27,159,255,.35), transparent 60%),
-              linear-gradient(135deg, var(--grad1), var(--grad2));
-  transform:skewY(-8deg);z-index:-1
+.review-card .author {
+font-weight: 600;
+color: #7b001c;
 }
 
-.section{padding:3rem 1rem}
-.section.narrow{max-width:1100px;margin:0 auto}
-.section .muted{color:var(--muted)}
-.grid{
-  display:grid;gap:1rem;margin-top:1.25rem;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr))
-}
-.card{
-  background:#fff;border:1px solid #eef1f6;border-radius:16px;padding:1rem 1rem 1.1rem;
-  box-shadow:0 1px 2px rgba(10,16,32,.04);
-  transition:transform .15s ease, box-shadow .15s ease
-}
-.card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(10,16,32,.08)}
-.icon{font-size:28px}
 
-.reviews{
-  display:grid;gap:1rem;margin-top:1rem;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr))
-}
-.review{
-  background:#fff;border:1px solid #eef1f6;border-radius:16px;padding:1rem;
-  box-shadow:0 1px 2px rgba(10,16,32,.04)
-}
-.stars{color:#ffb400;font-size:18px;margin-bottom:.25rem}
-blockquote{margin:0 0 .5rem;}
-
-.contact-card{
-  max-width:760px;margin:0 auto;background:#fff;border:1px solid #eef1f6;border-radius:18px;
-  padding:1.25rem;box-shadow:0 1px 2px rgba(10,16,32,.04);text-align:center
-}
-.contact-list{list-style:none;padding:0;margin:0 0 1rem;display:flex;gap:1rem;flex-wrap:wrap;justify-content:center}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
-  padding:.7rem 1rem;border-radius:12px;background:linear-gradient(135deg,var(--grad1),var(--grad2));
-  color:#00112a;font-weight:700;border:1px solid rgba(255,255,255,.4);box-shadow:0 6px 18px rgba(27,159,255,.35)
-}
-.btn:hover{filter:brightness(1.05)}
-.btn.secondary{background:#fff;color:var(--ink);border-color:#eef1f6;box-shadow:none}
-
-.site-footer{padding:1.5rem 1rem;text-align:center;color:var(--muted);font-size:14px}
-
-.about .bullet, .about .tick{list-style:none;padding-left:0}
-.about .bullet li{padding-left:1.25rem;position:relative}
-.about .bullet li::before{content:"•";position:absolute;left:0;color:var(--accent)}
-.about .tick li{padding-left:1.5rem;position:relative}
-.about .tick li::before{content:"✓";position:absolute;left:0;color:#1dbf73;font-weight:700}
-.cta-bar{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:.5rem}
-.quote-btn {
-  background: linear-gradient(45deg, #007BFF, #8B0000);
-  color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+/* Quote Box */
+.quote-box {
+background: #f9f9f9;
+border-left: 5px solid #1b1f5c;
+padding: 15px 20px;
+margin: 20px auto;
+border-radius: 6px;
+font-size: 16px;
+font-style: italic;
+color: #333;
+max-width: 600px;
 }
 
-.quote-btn:hover {
-  background: linear-gradient(45deg, #0056b3, #5b0000);
+
+/* Footer */
+footer {
+background: #111;
+color: #ccc;
+text-align: center;
+padding: 20px;
+font-size: 14px;
 }
-/* Small screens */
-@media (max-width:640px){
-  .nav a{padding:.3rem .55rem}
-  .contact-list{flex-direction:column;align-items:center}
+
+
+footer a {
+color: #ffd700;
+text-decoration: none;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+
+@keyframes slideUp {
+from { opacity: 0; transform: translateY(40px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+.hero h2 {
+font-size: 28px;
+}
+
+
+nav ul {
+flex-direction: column;
+gap: 10px;
+}
 }
