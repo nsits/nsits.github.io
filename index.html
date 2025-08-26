@@ -4,16 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NetSecure IT & Security</title>
-  <meta name="description" content="IT Support, CCTV Installation, Router & Network Setup, Computer Troubleshooting in Kolkata. Fast, affordable, and professional." />
-  <link rel="preload" href="style.css" as="style" />
+  <meta name="description" content="NetSecure IT & Security — reliable IT, CCTV, and networking services in Kolkata." />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Critical CSS to avoid flash (kept tiny) */
-    html { scroll-behavior: smooth; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial, sans-serif; color:#0a1020; }
-  </style>
 </head>
 <body>
+  <!-- Site Header -->
   <header class="site-header">
     <a class="brand" href="#home">
       <img src="assets/logo.svg" width="34" height="34" alt="NetSecure logo" loading="eager" decoding="async" />
@@ -22,110 +21,83 @@
     <nav class="nav">
       <a href="#services">Services</a>
       <a href="#reviews">Reviews</a>
-      <a href="about.html">About Us</a>
-      <a href="quote.html">Quote</a>
+      <a href="#about">About Us</a>
+      <a class="quote-btn" href="quote.html">
+        <i class="fa-solid fa-file-signature"></i> Request Quote
+      </a>
       <a class="cta" href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-inner">
-        <h1>Your Trusted IT &amp; Security Partner</h1>
-        <p class="sub">Fast, affordable, and professional service across Kolkata & nearby areas.</p>
-        <div class="pill">
-          <span>📞 +91 8981594925</span>
-          <span>✉ netsecureit@hotmail.com</span>
-        </div>
-      </div>
-      <div class="hero-bg" aria-hidden="true"></div>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Reliable IT & Security Solutions</h1>
+      <p>From CCTV to network setups, we keep your technology secure and running smoothly.</p>
+      <a class="btn primary" href="quote.html"><i class="fa-solid fa-file-signature"></i> Get a Quote</a>
+    </div>
+  </section>
 
-    <section id="services" class="section narrow">
-      <h2>Our Work &amp; Services</h2>
-      <p class="muted">End-to-end IT and security solutions for homes & businesses.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="icon">💻</div>
-          <h3>IT Support & Maintenance</h3>
-          <p>OS installs, updates, backup & recovery, performance tuning, antivirus, and routine health checks.</p>
-        </article>
-        <article class="card">
-          <div class="icon">📷</div>
-          <h3>CCTV Installation</h3>
-          <p>Site survey, camera placement, NVR/DVR setup, remote viewing, and ongoing maintenance.</p>
-        </article>
-        <article class="card">
-          <div class="icon">📡</div>
-          <h3>Router & Wi‑Fi Setup</h3>
-          <p>Dual‑band configuration, parental controls, mesh systems, QoS, and security enhancing.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🔌</div>
-          <h3>LAN & Network Setup</h3>
-          <p>Structured cabling, PoE switches, VLANs, IP planning, and seamless connectivity.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🛠️</div>
-          <h3>Computer Troubleshooting</h3>
-          <p>Hardware diagnostics, SSD/RAM upgrades, data migration, and quick on‑site fixes.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🔒</div>
-          <h3>Security & Hardening</h3>
-          <p>Firewall rules, secure remote access, password policies, and device monitoring.</p>
-        </article>
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <i class="fa-solid fa-video"></i>
+        <h3>CCTV Installation</h3>
+        <p>End-to-end CCTV solutions for homes and businesses.</p>
       </div>
-    </section>
-
-    <section id="reviews" class="section">
-      <div class="section-inner narrow">
-        <h2>Customer Reviews</h2>
-        <p class="muted">Real feedback from clients we’ve helped.</p>
-        <div class="reviews">
-          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>“Quick CCTV setup and neat cable work. Remote viewing works perfectly.”</blockquote>
-            <figcaption>— R. Sen (Salt Lake)</figcaption>
-          </figure>
-          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>“They optimized our office network — no more Wi‑Fi drops. Highly recommended.”</blockquote>
-            <figcaption>— S. Das (Lake Town)</figcaption>
-          </figure>
-          <figure class="review">
-            <div class="stars" aria-label="4.5 out of 5 stars">★★★★☆</div>
-            <blockquote>“PC upgrade from HDD to SSD was super fast. System feels brand new.”</blockquote>
-            <figcaption>— A. Mukherjee (Salt Lake)</figcaption>
-          </figure>
-          <figure class="review">
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>“My precious data has been recovered, Thankyou team!!.”</blockquote>
-            <figcaption>— Arjun Yadav (Tollygunj)</figcaption>
-          </figure>
-        </div>
+      <div class="card">
+        <i class="fa-solid fa-network-wired"></i>
+        <h3>Network Setup</h3>
+        <p>Secure and structured networking configurations.</p>
       </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="contact-card">
-        <h2>Contact</h2>
-        <ul class="contact-list">
-          <li>📞 <strong>+91 8981594925</strong></li>
-          <li>✉ <strong></strong></li>
-          <li>📍 Kolkata, West Bengal</li>
-        </ul>
-        <a class="btn" href="mailto:netsecureit@hotmail.com?subject=Service%20Inquiry%20-%20NetSecure%20IT%20%26%20Security">Request a Callback</a>
+      <div class="card">
+        <i class="fa-solid fa-desktop"></i>
+        <h3>Computer Repair</h3>
+        <p>Diagnostics, upgrades, and troubleshooting services.</p>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
 
+  <!-- Reviews Section -->
+  <section id="reviews" class="section dark">
+    <h2>Client Reviews</h2>
+    <div class="reviews">
+      <blockquote>
+        <p>“Quick and professional CCTV installation. Highly recommended!”</p>
+        <cite>— Priya S.</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Our office network has never been more stable. Great work.”</p>
+        <cite>— Rajesh K.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section narrow">
+    <h2>About Us</h2>
+    <p><strong>NetSecure IT & Security</strong> provides practical IT solutions in Kolkata, from CCTV to networking and computer repairs. With fast response, transparent pricing, and security-first practices, we keep your systems reliable and secure.</p>
+    <a class="btn secondary" href="about.html">Learn More</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>Have a project in mind? We’re here to help.</p>
+    <a class="btn primary" href="mailto:netsecureit@hotmail.com?subject=Service%20Inquiry%20-%20NetSecure">
+      <i class="fa-solid fa-envelope"></i> Email Us
+    </a>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
-    <p>© <span id="year"></span> NetSecure IT &amp; Security. All rights reserved.</p>
+    <p>© <span id="year"></span> NetSecure IT & Security. All rights reserved.</p>
   </footer>
 
+  <!-- Script -->
   <script>
-    // tiny inline JS for the current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
