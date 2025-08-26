@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You - NetSecure IT & Security</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(45deg, #007BFF, #8B0000);
+      padding: 15px;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .thankyou-card {
+      background: #fff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 40px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .thankyou-card .icon {
+      font-size: 4rem;
+      color: #28a745;
+      margin-bottom: 15px;
+      animation: pop 0.6s ease;
+    }
+
+    .thankyou-card h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .thankyou-card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .quote-box {
+      background: #f8f9fa;
+      border-left: 5px solid #007BFF;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 6px;
+      font-size: 15px;
+      font-style: italic;
+      color: #444;
+      line-height: 1.5;
+    }
+
+    .back-home {
+      display: inline-block;
+      margin-top: 20px;
+      background: linear-gradient(45deg, #007BFF, #8B0000);
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .back-home:hover {
+      background: linear-gradient(45deg, #0056b3, #5b0000);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 50px;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NetSecure IT & Security</h1>
+  </header>
+
+  <div class="thankyou-card">
+    <div class="icon"><i class="fas fa-check-circle"></i></div>
+    <h2>Thank You!</h2>
+    <p>Your request has been successfully submitted. We will get back to you shortly.</p>
+    
+    <div class="quote-box" id="quoteBox">Loading cybersecurity wisdom...</div>
+    
+    <a href="index.html#home" class="back-home">← Back to Home</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 NetSecure IT & Security. All rights reserved.</p>
+  </footer>
+
+  <!-- External JS -->
+  <script src="thankyou.js"></script>
+</body>
+</html>
